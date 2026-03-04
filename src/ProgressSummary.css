@@ -1,0 +1,49 @@
+.progress-card {
+  background: #f0f4ff;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 400px;
+  margin: 20px auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 60px;
+  border-radius: 50%;
+}
+
+.stats-grid, .details-grid {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+
+.progress-bar {
+  margin-top: 20px;
+}
+
+.bar {
+  background: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 12px;
+  margin: 5px 0;
+}
+
+.fill {
+  background: #4a90e2;
+  height: 100%;
+}
+
+.motivation {
+  font-size: 0.9em;
+  color: #555;
+}

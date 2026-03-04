@@ -1,0 +1,149 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  /* Gradient + Image */
+  background:
+    linear-gradient(
+      135deg,
+      rgba(38, 100, 235,0.4),
+      rgba(1, 71, 128, 0.8)
+    ),
+    url("/images/background.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* 🔥 Important */
+  background-attachment: fixed;
+
+  font-family: "Segoe UI", sans-serif;
+}
+/* Full page background */
+.register-wrapper {
+  min-height: 100vh;
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Card */
+.register-card {
+  animation: slideUp 0.8s ease-out;
+  background: linear-gradient(rgba(38, 100, 235,0.2));
+  width: 100%;
+  max-width: 420px;
+  padding: 35px 40px;
+  border-radius: 14px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Title */
+.title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #95b1ee;
+  margin-bottom: 30px;
+}
+
+/* Button container */
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Common button style */
+.role-btn {
+  width: 100%;
+  padding: 16px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+/* Subtitle */
+.role-btn span {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 4px;
+  opacity: 0.9;
+}
+
+/* Learner button */
+.role-btn.learner {
+  background: linear-gradient(135deg, rgb(19, 93, 255), #3b82f6);
+  color: white;
+}
+
+.role-btn.learner:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(37, 99, 235, 0.4);
+}
+
+/* Mentor button */
+.role-btn.mentor {
+  background: #f9fafb;
+  color: #1f2933;
+  border: 1px solid #e5e7eb;
+}
+
+.role-btn.mentor:hover {
+  background-color: #f3f4f6;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+@keyframes slideUp {
+  from {
+    transform: translateY(60px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .register-card {
+    padding: 28px 25px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .role-btn {
+    font-size: 16px;
+    padding: 14px;
+  }
+
+  .role-btn span {
+    font-size: 13px;
+  }
+}
+
+/* 💻 Tablet responsiveness */
+@media (min-width: 481px) and (max-width: 768px) {
+  .register-card {
+    max-width: 380px;
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "dist",
+    "site": "edu-hub-platform-43af5",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      { "source": "**", "destination": "/index.html" }
+    ]
+  }
+}
+
+
